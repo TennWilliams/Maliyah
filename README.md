@@ -1,4 +1,5 @@
-# Maliyah Affirmation App
+## Maliyah Affirmation App
+<img src="screenshot.jpg" width="300">
 A created an affirmation app for my daughter to help with her anxiety when she is not with me.
 It askes her how she is feeling and a different image message will pop up on the screen depending on what emotion she picks.
 
