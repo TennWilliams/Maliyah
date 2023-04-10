@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicons -->
+<link href="favicon.png" rel="icon">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+<style>
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url(magic-background.png);
+  background-repeat: no-repeat;
+  background-color: lavender;
+}
+
+.first{
+  display: flex;
+  justify-content: center;
+}
+
+.last{
+  display: flex;
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.first .flip-card-front {
+  background-color: rgb(163, 27, 163);
+  font-size: 30px;
+  text-align: center;
+  color: palevioletred;
+}
+
+.last .flip-card-front {
+  background-color: palevioletred;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(163, 27, 163);
+}
+
+.first .flip-card-back {
+  background-color: palevioletred;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+.last .flip-card-back {
+  background-color: rgb(163, 27, 163);
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+h2{
+  color: blueviolet;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+h3{
+  color: palevioletred;
+  text-align: center;
+  font-size: x-large;
+}
+
+h4{
+  font-size: x-large;
+}
+
+.extra h2{
+  color: blueviolet;
+  text-align: center;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.extra button{
+  color: blanchedalmond;
+  background-color: rgb(190, 59, 190);
+  border: 4px solid palevioletred;
+  border-radius: 20px;
+  width: 220px;
+  font-size: 20px;
+  position: relative;
+  transition: 0.9s;
+  margin-bottom: 70px;
+  font-weight: bold;
+  margin-left: 660px;
+}
+
+.extra button:active{
+  top: 2px;
+}
+
+.extra button:hover{
+  bottom: 1px;
+  font-weight: bolder;
+  font-size: 22px;
+  background-color: palevioletred;
+  border-color: blueviolet;
+  transition: 0.9s;
+}
+
+.affirmations h3{
+  color: palevioletred;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.affirmations{
+  padding-top: 80px;
+}
+.girl{
+  display: flex; 
+}
+
+.girl img{
+  margin-left: 100px;
+  margin-top: 300px;
+}
+
+
+.girl p{
+  color:blueviolet;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 350px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(190, 59, 190);
+  color: blanchedalmond;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+
+  font-weight: bolder;
+  background-color: palevioletred;
+  transition: 0.9s;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Welcome To Your Black Girl Magic Page</h2>
+<h3>Maliyah, you are..... Black Girl Magic <br>Click or hover over a letter in your name to reveal all the wonderful things you are or things you can do!</h3>
+<div class="extra">
+  <h2>And if you need extra reassurance click the button below</h2>
+  <a href="#affirmations"><button title="You are Magic">Black Girl Magic</button></a>
+</div>
+
+<!--First Name Cards-->
+<div class="first">
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>M</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Magical</h4> 
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>A</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4>
+        <h4>Amazing</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>L</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4>
+        <h4>Loved</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>I</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4>
+        <h4>Intelligent</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>Y</h1>
+      </div>
+      <div class="flip-card-back"> 
+        <h4>I am</h4> 
+        <h4>Young</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>A</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>An Artist</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>H</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Hard-working</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<!--Last Name Cards-->
+<div class="last">
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>H</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Helpful</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>A</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I can</h4> 
+        <h4>Achieve Anything</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>L</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am a</h4> 
+        <h4>Leader</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>L</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Loving</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>M</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Magnificent</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>A</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Athletic</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>N</h1>
+      </div>
+      <div class="flip-card-back">
+        <h4>I am</h4> 
+        <h4>Nice</h4> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="affirmations" id="affirmations">
+  <h3>Maliyah, fix you crown, sit up straight and repeat after me:</h3>
+    <div class="girl">
+      <div class="words">
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Descended from Kings & Queens.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am the Face of the Future.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Wanted.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Educated.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Fearless.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Determined.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Blessed.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am A Goal Getter.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Beautiful Inside & Out.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Unstoppable.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Kind.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Black & Proud.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I am Black Girl Magic.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+    </div>
+      
+      
+     <br>
+      <img src="magic.jpg" width="200" height="200" style="border-radius: 20%" /> 
+    </div>
+    
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</body>
+</html>
+
+
+
