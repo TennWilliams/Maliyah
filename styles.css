@@ -1,8 +1,7 @@
 body {
-  background-image: url('background.jpg');
-  background-repeat: no-repeat;
+  background-image: url('home-background2.png');
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .port img {
@@ -12,175 +11,52 @@ body {
     margin-bottom: 10px;
 }
 
+.title{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
 p {
     display: flex;
-    margin-left: 150px;
-    
+    margin-left: 10px;
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: whitesmoke;
     text-align: center;
     background: palevioletred;
     padding: 3px 10px;
-    margin-bottom: 6px;
     border-radius: 15px;
-    max-width: 700px;
-    
+    max-width: 800px;
 }
 
-.repo a {
-    margin-left: 10px;
-    
-}
-
-.repo img {
-    margin-left: 5px;
-}
-
-.repo {
-  background: rgb(184, 53, 184);
-  padding: 30px;
-  border: 6px solid whitesmoke;
-  border-radius: 20px;
-  max-width: 900px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 350px;
-}
-
-.port h2{
-  background: white;
-  border-radius: 8px;
-  border: 6px solid palevioletred;
-  padding: 5px;
-  max-width: 650px;
-  margin-left: 80px;
-  margin-top: 50px;
-}
-
-.port .happy h2 a{
-    color: blueviolet;
-}
-
-.port .happy h2 a:hover{
-    color: goldenrod;
-}
-
-.port .sad h2 a{
-  color: blueviolet;
-}
-
-.port .sad h2 a:hover{
-  color: red;
-}
-
-.port .daddy h2 a{
-  color: blueviolet;
-}
-
-.port .daddy h2 a:hover{
-  color: darkgreen;
-}
-
-.port .anxious h2 a{
-  color: blueviolet;
-}
-
-.port .anxious h2 a:hover{
-  color: darkblue
-}
-
-.port .bored h2 a{
-  color: blueviolet;
-}
-
-.port .bored h2 a:hover{
-  color: black;
-}
-.port .nervous h2 a{
-  color: blueviolet;
-}
-
-.port .nervous h2 a:hover{
-  color: orangered;
-}
-
-.port h2 a{
-    position: relative;
-    
-    
-}
-.port h2 a:hover{
-    
-    cursor: pointer;
-    bottom: 2px;
-    font-weight: bolder;
-    color: goldenrod;
-  }
-.port h2 a:active{
-    top: 2px;
-  }
-
-  .port .idk h2 a{
-    color: blueviolet;
-  }
-
-  .port .idk h2 a:hover{
-    color: hotpink;
-  }
-
-  .repo a:active{
-    width: max-content;
-    height: max-content;
-  }
-
-
-h2 {
-  background: #fff;
-  box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
-  padding: 3px 10px;
+p2 {
+  display: flex;
+  margin-left: 530px;
   font-size: 24px;
-  margin-bottom: 6px;
-  border-radius: 3px;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  color: palevioletred;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: whitesmoke;
+  text-align: center;
+  background: rgb(184, 53, 184);
+  padding: 3px 10px;
+  border-radius: 15px;
+  max-width: 480px;
   justify-content: center;
-  position: relative;
-  max-width: 700px;
-  margin-left: 450px;
 }
 
 h1 {
-  color: whitesmoke;
-  
+  color: rgb(184, 53, 184);
   text-align: center;
-  background: rgb(184, 53, 184);
+  background: whitesmoke;
   padding: 3px 10px;
   font-size: 10px;
   margin-bottom: 6px;
   border-radius: 8px;
   display:flex;
-  margin-left: 260px;
+  margin-left: 540px;
   justify-content: center;
   max-width: 500px;
 }
 
-h4 {
-  color: whitesmoke;
-  font-weight: bolder;
-  text-align: center;
-  background: palevioletred;
-  padding: 3px 10px;
-  font-size: 30px;
-  margin-bottom: 6px;
-  border-radius: 8px;
-  display:flex;
-  margin-left: 90px;
-  justify-content: center;
-  max-width: 630px;
-}
 
 #myBtn {
   display: none;
@@ -206,4 +82,69 @@ h4 {
   font-size: 32px;
   color: #fff;
   line-height: 0;
+}
+
+
+.menu button {
+  color: blanchedalmond;
+  background-color: rgb(190, 59, 190);
+  border: 4px solid palevioletred;
+  border-radius: 20px;
+  width: 220px;
+  font-size: 20px;
+  position: relative;
+  transition: 0.9s;
+  margin-bottom: 70px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.menu button:active{
+  top: 2px;
+}
+
+.menu button:hover {
+  bottom: 1px;
+  font-weight: bolder;
+  font-size: 22px;
+  background-color: palevioletred;
+  border-color: blueviolet;
+  transition: 0.9s;
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  padding-top: 50px;
+}
+
+.menu2{
+  display: flex;
+  padding-top: 50px;
+}
+
+.menu2 button:hover{
+  bottom: 1px;
+  font-weight: bolder;
+  font-size: 22px;
+  background-color: palevioletred;
+  border-color: blueviolet;
+  transition: 0.9s;
+  text-decoration: underline;
+}
+.menu2 button{
+  color: blanchedalmond;
+  background-color: rgb(190, 59, 190);
+  border: 4px solid palevioletred;
+  border-radius: 20px;
+  width: 220px;
+  font-size: 20px;
+  position: relative;
+  transition: 0.9s;
+  margin-bottom: 70px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.menu2 button:active{
+  top: 2px;
 }

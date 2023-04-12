@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8" />
+<title>Black Girl Magic Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="magic-styles.css">
 
 <!-- Favicons -->
 <link href="favicon.png" rel="icon">
@@ -11,199 +15,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 
-<style>
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-image: url(magic-background.png);
-  background-repeat: no-repeat;
-  background-color: lavender;
-}
 
-.first{
-  display: flex;
-  justify-content: center;
-}
-
-.last{
-  display: flex;
-  justify-content: center;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 150px;
-  height: 150px;
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  margin-left: 30px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1.8s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.first .flip-card-front {
-  background-color: rgb(163, 27, 163);
-  font-size: 30px;
-  text-align: center;
-  color: palevioletred;
-}
-
-.last .flip-card-front {
-  background-color: palevioletred;
-  font-size: 30px;
-  text-align: center;
-  color: rgb(163, 27, 163);
-}
-
-.first .flip-card-back {
-  background-color: palevioletred;
-  color: white;
-  transform: rotateY(180deg);
-  
-}
-
-.last .flip-card-back {
-  background-color: rgb(163, 27, 163);
-  color: white;
-  transform: rotateY(180deg);
-  
-}
-
-h2{
-  color: blueviolet;
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bolder;
-  font-size: xx-large;
-}
-
-h3{
-  color: palevioletred;
-  text-align: center;
-  font-size: x-large;
-}
-
-h4{
-  font-size: x-large;
-}
-
-.extra h2{
-  color: blueviolet;
-  text-align: center;
-  font-size: x-large;
-  text-decoration: none;
-}
-
-.extra button{
-  color: blanchedalmond;
-  background-color: rgb(190, 59, 190);
-  border: 4px solid palevioletred;
-  border-radius: 20px;
-  width: 220px;
-  font-size: 20px;
-  position: relative;
-  transition: 0.9s;
-  margin-bottom: 70px;
-  font-weight: bold;
-  margin-left: 660px;
-}
-
-.extra button:active{
-  top: 2px;
-}
-
-.extra button:hover{
-  bottom: 1px;
-  font-weight: bolder;
-  font-size: 22px;
-  background-color: palevioletred;
-  border-color: blueviolet;
-  transition: 0.9s;
-}
-
-.affirmations h3{
-  color: palevioletred;
-  text-align: left;
-  font-size: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.affirmations{
-  padding-top: 80px;
-}
-.girl{
-  display: flex; 
-}
-
-.girl img{
-  margin-left: 100px;
-  margin-top: 300px;
-}
-
-
-.girl p{
-  color:blueviolet;
-  font-size: 25px;
-  font-weight: bold;
-  padding-left: 350px;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  
-  border: none;
-  outline: none;
-  background-color: rgb(190, 59, 190);
-  color: blanchedalmond;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50px;
-}
-
-#myBtn:hover {
-  font-weight: bolder;
-  background-color: palevioletred;
-  transition: 0.9s;
-}
-#myBtn i {
-  font-size: 32px;
-  color: #fff;
-  line-height: 0;
-}
-
-</style>
 </head>
 <body>
 
+  <div class="menu">
+    <a href="index.html" title="You Can Always Go Home"><button>Home</button></a>
+    <a href="Emotions.html" title="It's Ok to Feel Your Emotions"><button>Emotions</button></a>
+    <a href="#" title="You Are Black Girl Magic"><button>Black Girl Magic</button></a> 
+    <a href="self.html" title="Always Choose Yourself"><button>Self-Care</button></a>
+</div>
+
 <h2>Welcome To Your Black Girl Magic Page</h2>
-<h3>Maliyah, you are..... Black Girl Magic <br>Click or hover over a letter in your name to reveal all the wonderful things you are or things you can do!</h3>
+<h3>Maliyah, you are..... Black Girl Magic <br>Click or hover over a letter in your name to reveal all the wonderful things that make up you!</h3>
 <div class="extra">
   <h2>And if you need extra reassurance click the button below</h2>
-  <a href="#affirmations"><button title="You are Magic">Black Girl Magic</button></a>
+  <a href="#affirmations"><button title="You are Magic">Affirmations</button></a>
 </div>
 
 <!--First Name Cards-->
@@ -442,6 +269,11 @@ h4{
         <p>
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
             I am Kind.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            I Can To ANYTHING I Put My Mind To.
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
         </p>
         <p>

@@ -1,0 +1,109 @@
+<html> 
+<head>
+    <meta charset="UTF-8" />
+    <title>Emotions Page</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    
+    <link rel="stylesheet" type="text/css" href="emotions-styles.css">
+
+    <!-- Favicons -->
+    <link href="favicon.png" rel="icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+     <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+  <body>
+        <div class="emotions">
+            <br><br>
+        <h1>Emotions Page</h1>
+        </div>
+  
+        <div class="menu">
+            <a href="index.html" title="You Can Always Go Home"><button>Home</button></a>
+            <a href="#" title="It's Ok to Feel Your Emotions"><button>Emotions</button></a>
+            <a href="magic.html" title="You Are Black Girl Magic"><button>Black Girl Magic</button></a> 
+            <a href="self.html" title="Always Choose Yourself"><button>Self-Care</button></a>
+        </div>
+    <div class="port">
+        <p2>
+            Maliyah, emotions can be challenging for adults to handle and understand <br>so I know sometimes it is hard for you to work thru them.<br>
+            Below I have some emotions that I know you have a hard time dealing with.<br>
+            Click on an emotions that you are having a hard time dealing with right now <br>and I can help you get thru it.<br>
+            Remember, its ok to feel your emotions but we never want them to keep us down<br>
+            You got this girl, I am here to help.
+        </p2><br>
+        
+
+    <div class="repo">
+        <h4>How Are You Feeling Today<i class="bi bi-patch-question"></i></h4>
+        <div class="happy">
+            <h2> I am <a title="Happy" href="Happy.mp4">HAPPY</a> 
+                <img src="./happy.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="sad">
+            <h2> I am <a title="sad" href="Sad.mp4"> SAD </a>
+                <img src="./sad.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="daddy">
+            <h2> I miss <a title="Daddy" href="Dad.mp4"> DADDY </a>
+                <img src="./butterfly.png" width="30" height="30" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="anxious">
+            <h2> I am <a title="anxious" href="anxious.mp4"> ANXIOUS </a>
+                <img src="./anxious.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="bored">
+            <h2> I am <a title="Bored" href="Bored.mp4"> BORED </a>
+                <img src="./bored.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="nervous">
+            <h2> I am <a title="nervous" href="nervous.mp4"> NERVOUS </a>
+                <img src="./nervous.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        <div class="idk">
+            <h2> I am<a title="not sure" href="IDK.mp4"> NOT SURE </a>
+                <img src="./idk.jpg" width="50" height="50" style="border-radius: 50%" />
+            </h2>
+        </div>
+        
+    </div>
+    </div>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-short"></i></button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+    
+  </body>
+</html>
