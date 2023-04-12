@@ -77,7 +77,8 @@ body {
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: whitesmoke;
-    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
     background: palevioletred;
     border-radius: 15px;
     max-width: 900px;
@@ -117,7 +118,7 @@ body {
     text-decoration: underline;
   }
 
-  .math button{
+  .two button{
     margin-top: 100px;
   }
 
