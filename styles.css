@@ -5,20 +5,24 @@ body {
 }
 
 .port img {
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
 }
 
 .title{
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
 }
 
+.port{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+}
 p {
     display: flex;
-    margin-left: 10px;
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: whitesmoke;
@@ -26,12 +30,14 @@ p {
     background: palevioletred;
     padding: 3px 10px;
     border-radius: 15px;
-    max-width: 800px;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 
 p2 {
   display: flex;
-  margin-left: 590px;
+  margin-left: 2vw;
+  margin-top: 2vw;
   font-size: 24px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: whitesmoke;
@@ -39,8 +45,7 @@ p2 {
   background: rgb(184, 53, 184);
   padding: 3px 10px;
   border-radius: 15px;
-  max-width: 480px;
-  justify-content: center;
+  max-width: fit-content;
 }
 
 h1 {
@@ -49,12 +54,11 @@ h1 {
   background: whitesmoke;
   padding: 3px 10px;
   font-size: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 1vw;
   border-radius: 8px;
   display:flex;
-  margin-left: 540px;
-  justify-content: center;
-  max-width: 500px;
+  margin-left: 2vw;
+  max-width: fit-content;
 }
 
 
@@ -76,7 +80,7 @@ h1 {
 #myBtn:hover {
   font-weight: bolder;
   background-color: palevioletred;
-  transition: 0.9s;
+  transition: 0.9s ease-in;
 }
 #myBtn i {
   font-size: 32px;
@@ -94,14 +98,14 @@ h1 {
   width: 220px;
   font-size: 20px;
   position: relative;
-  transition: 0.9s;
-  margin-bottom: 30px;
+  transition: 0.7s ease-in;
+  margin-bottom: 2vw;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 .menu button:active{
-  top: 2px;
+  top: 1px;
 }
 
 .menu button:hover {
@@ -110,18 +114,18 @@ h1 {
   font-size: 22px;
   background-color: palevioletred;
   border-color: purple;
-  transition: 0.9s;
+  transition: 0.7s ease-in;
   text-decoration: underline;
 }
 
 .menu {
   display: flex;
-  padding-top: 50px;
+  padding-top: 3vw;
 }
 
 .menu2{
   display: flex;
-  padding-top: 50px;
+  padding-top: 1vw;
 }
 
 .menu2 button:hover{
@@ -130,7 +134,7 @@ h1 {
   font-size: 22px;
   background-color: palevioletred;
   border-color: blueviolet;
-  transition: 0.9s;
+  transition: 0.7s ease-in;
   text-decoration: underline;
 }
 .menu2 button{
@@ -141,11 +145,11 @@ h1 {
   width: 220px;
   font-size: 20px;
   position: relative;
-  transition: 0.9s;
-  margin-bottom: 70px;
+  transition: 0.7s ease-in;
+  margin-bottom: 1vw;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 .menu2 button:active{
-  top: 2px;
+  top: 1px;
 }
