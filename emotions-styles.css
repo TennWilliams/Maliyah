@@ -43,7 +43,6 @@ p2 {
 }
 
 
-
 .port h2{
   background: white;
   border-radius: 8px;
@@ -165,6 +164,20 @@ p2 {
 
   .port .idk h2 a:hover{
     color: hotpink;
+  }
+
+  .list{
+    display: flex;
+    justify-content: center;
+    margin-right: 5vw;
+  }
+
+  .port .list h2 a{
+    color: blueviolet;
+  }
+
+  .port .list h2 a:hover{
+    color: purple;
   }
 
   .repo a:active{
